@@ -1,16 +1,14 @@
-# Turborepo kitchen sink starter
+# This is an e-commerce app with an admin dashboard and a user facing dashboard using Turborepo in a single monorepo.
 
 This is an official starter Turborepo with multiple meta-frameworks all working in harmony and sharing packages.
+# Run
+`pnpm run dev`
 
-This example also shows how to use [Workspace Configurations](https://turbo.build/repo/docs/core-concepts/monorepos/configuring-workspaces).
+admin dashboard: `http://localhost:3001/`
+user dashboard: `http://localhost:5173/`
+api running on `HTTP://localhost:5001`
 
-## Using this example
 
-Run the following command:
-
-```sh
-npx create-turbo@latest -e kitchen-sink
-```
 
 ## What's inside?
 
@@ -18,12 +16,11 @@ This Turborepo includes the following packages and apps:
 
 ### Apps and Packages
 
-- `api`: an [Express](https://expressjs.com/) server
-- `storefront`: a [Next.js](https://nextjs.org/) app
-- `admin`: a [Vite](https://vitejs.dev/) single page app
-- `blog`: a [Remix](https://remix.run/) blog
-- `logger`: isomorphic logger (a small wrapper around console.log)
-- `ui`: a dummy React UI library (which contains a single `<CounterButton>` component)
+- `api`: an [Express](https://expressjs.com/) server--- express project
+- `admin`: a [Vite](https://vitejs.dev/) admin interface (in progress)
+- `user`: a [Vite](https://vitejs.dev/) user interface (in progress)
+
+- `ui`: shared react ui components for admin and user interface.
 - `scripts`: Jest and ESLint configurations
 - `tsconfig`: tsconfig.json's used throughout the monorepo
 
